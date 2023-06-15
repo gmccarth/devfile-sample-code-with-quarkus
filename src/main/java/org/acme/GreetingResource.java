@@ -7,10 +7,10 @@ import javax.ws.rs.core.MediaType;
 
 @Path("/hello-resteasy")
 public class GreetingResource {
-
+    @ConfigProperty(name="SUMMIT_YEAR") String summitYear;
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return "Hello RESTEasy";
+        return "Hello RESTEasy " + summitYear ;
     }
 }
