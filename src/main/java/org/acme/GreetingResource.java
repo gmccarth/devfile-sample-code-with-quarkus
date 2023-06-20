@@ -11,6 +11,6 @@ public class GreetingResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return "Hello Charlotte RHUG - Summit " + summitYear + " Recap" ;
+        return "Hello Charlotte RHUG - Summit 2024 Recap" ;
     }
 }
