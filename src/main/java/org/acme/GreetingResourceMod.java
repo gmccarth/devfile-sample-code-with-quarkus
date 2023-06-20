@@ -6,7 +6,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 @Path("/hello-summit")
-public class GreetingResource {
+public class GreetingResourceMod {
     @ConfigProperty(name="SUMMIT_YEAR") String summitYear;
     @GET
     @Produces(MediaType.TEXT_PLAIN)
